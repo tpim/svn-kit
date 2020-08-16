@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.tpim.svn-kit</id>
+    <name>svn kit</name>
+    <vendor email="tpim0901@gmail.com">Tpim</vendor>
+
+    <description>a set svn kits whick make work more efficient!</description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="SvnKitAction" class="com.tpim.kit.Commit" text="CommitSingleFile" description="commit single file.">
+            <add-to-group group-id="ViewStatusBarWidgetsGroup" anchor="first"/>
+        </action>
+    </actions>
+
+</idea-plugin>

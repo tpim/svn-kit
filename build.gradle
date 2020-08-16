@@ -1,0 +1,29 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.4.21'
+}
+
+group 'com.tpim'
+version '1.0-SNAPSHOT'
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2020.1.2'
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
+repositories {
+    maven {
+        url '/Users/tpim/Code/ideaIC-2020.1.2.zip'
+    }
+    maven {
+        url 'https://dl.bintray.com/jetbrains/intellij-plugin-service'
+    }
+    maven { url 'https://cache-redirector.jetbrains.com/jetbrains.bintray.com/intellij-plugin-service' }
+    maven { url 'https://cache-redirector.jetbrains.com/repo1.maven.org/maven2' }
+    maven { url 'https://cache-redirector.jetbrains.com/jcenter.bintray.com' }
+    mavenCentral()
+}
+
